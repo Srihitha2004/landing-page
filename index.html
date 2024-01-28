@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion space</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            AURA
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#" onclick="scrollToSection('about-section')">About us</a>
+            <a href="#" onclick="scrollToSection('contact-section')">Contact</a>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="search-icon mr-3">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="toggle" onclick="toggleMenu();">
+                <div class="togglt-icon mr-2"></div>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="register">
+                <a href="#">Register</a>
+            </div>
+        </div>
+    </nav>
+    <section class="h-txt">
+        <span>Elevate Your Style</span>
+        <h1>Where Aura Meets Fashion</h1>
+        <br>
+        <a href="#">Collect Your Style</a>
+    </section>
+</header>
+<section id="about-section">
+    <div class="about-content">
+        <div class="about-image">
+            <img src="image.jpg" alt="Fashion Store Image">
+        </div>
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>Welcome to AURA, your premier destination for all things fashion! We pride ourselves on curating a diverse and stylish collection of clothing, accessories, and footwear that caters to every taste and occasion.</p>
+            <p>At AURA, we understand that fashion is a way to express your unique identity. Our online fashion store is designed to provide a seamless and enjoyable shopping experience, bringing the latest trends and timeless classics directly to your fingertips.</p>
+            <p>Explore our user-friendly platform, where secure transactions and prompt delivery are our top priorities. Join our fashion community and discover a world where style meets elegance</p>
+                <center><h4><b>welcome to AURA, where your fashion journey begins!</b></h4></center>
+        </div>
+    </div>
+</section>
+<section id="contact-section">
+    <div class="contact-content">
+        <div class="contact-text">
+            <h2>Contact Us</h2>
+            <p>Have any questions or feedback? Feel free to reach out to us. We value your input and are here to assist you.</p>
+            <p>For customer support, please email us at <a href="mailto:info@yourwebsite.com">aura@gmail.com</a> or call us at <span class="phone-number">+91 1234506789</span>.</p>
+            <div class="social-media-icons">
+                <a href="tel:0891 245678"><i class="fas fa-phone"></i></a>
+                <a href="mailto:aura@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/auraFashionspace" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/auraFashionspace" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/auraFashionspace" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="feedback-form">
+                <h3>Give Us Your Feedback</h3>
+                <form action="#" method="post">
+                    <label for="feedback">Your Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/e0367bab23.js" crossorigin="anonymous"></script>
+<script>
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+    function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    menu.classList.toggle('show-menu');
+}
+</script>
+</body>
+</html>
